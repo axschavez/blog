@@ -16,7 +16,7 @@ class posts extends Model
         return $this->belongsTo(Category::class);
     }
     //relacion de uno a muchos
-    public function tag(){
+    public function tags(){
         return $this->belongsToMany(tags::class);
     }
 }

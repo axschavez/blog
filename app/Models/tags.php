@@ -9,7 +9,7 @@ class tags extends Model
 {
     use HasFactory;
     //relacion de uno a muchos
-    public function post(){
+    public function posts(){
         return $this->belongsToMany(posts::class);
     }
 }
